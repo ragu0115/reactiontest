@@ -1,9 +1,7 @@
-body{
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-
-}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
 
 #blue{
     width: 1000px;
@@ -12,6 +10,7 @@ body{
     background-color: aqua;
     font-size: 2rem;
     cursor: pointer;
+    display: all;
 }
 
 #red{
@@ -21,6 +20,7 @@ body{
     background-color: rgb(219, 43, 43);
     font-size: 4rem;
     cursor: pointer;
+    display: none;
 }
 
 #green{
@@ -30,4 +30,25 @@ body{
     background-color: rgb(81, 219, 81);
     font-size: 4rem;
     cursor: pointer;
+    display: none;
+}
+
+#white{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 4rem;
+    cursor: pointer;
+    display: none;
+}
+
+#yellow{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 4rem;
+    cursor: pointer;
+    display: none;
 }
