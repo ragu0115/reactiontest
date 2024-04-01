@@ -32,11 +32,16 @@ function early() {
 function reset() {
   document.getElementById('yellow').style.display = 'none';
   document.getElementById('blue').style.display = 'inline';
+  document.getElementById('white').style.display = 'none';
 }
+
+document.getElementById('green').addEventListener('click', click);
 
 function click() {
   document.getElementById('green').style.display = 'none';
   document.getElementById('white').style.display = 'inline';
   var endTime = new Date().getTime();
   var reactionTime = (endTime - startTime) / 1000;
+  document.getElementById('white').textContent = "Reaction Time: " 
+  + reactionTime.toFixed(3) + " seconds \n" + "Click to restart!";
 }
