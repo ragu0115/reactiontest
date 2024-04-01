@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reaction Time Test</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/peeposit.png" type="image/png">
 </head>
 <body>
     <div id="reacttest">
         <button onclick="start()" id="blue">When the red box turns green, click as
         quickly as you can. Click anywhere to start.</button>
-        <button" id="red">Wait for Green!</button>
+        <button onclick="early()" id="red">Wait for Green!</button>
         <button onclick="click()" id="green">Click!!!</button>
-        <button onclick="tooSoon()" id="yellow">Too soon! Try clicking again!</button>
+        <button onclick="reset()" id="yellow">Too soon! Try clicking again!</button>
         <button onclick="myFunction()" id="white">Your reaction time is </button>
     </div>
     <script src="index.js"></script>

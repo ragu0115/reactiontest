@@ -14,15 +14,17 @@ function early() {
   document.getElementById('yellow').style.display = 'inline';
 }
 
+// Function if we reach the early click element
+function reset() {
+  document.getElementById('yellow').style.display = 'none';
+  document.getElementById('blue').style.display = 'inline';
+}
+
 // Function if element is pressed on time
 function onTime() {
   var target = document.getElementById('red');
   target.style.display = 'none';
       document.getElementById('green').style.display = 'inline';
-}
-
-document.getElementById("red").addEventListener("click", function() {
-  var delay = Math.floor(Math.random() * 4000) + 1000;
 }
 
 function wait() {
@@ -37,10 +39,3 @@ function click() {
     startTime = new Date().getTime();
   }
 
-function start3() {
-    var target = document.getElementById('blue');
-    target.style.display = 'none';
-    target.style.top = Math.random() * (window.innerHeight - 100) + 'px';
-    target.style.left = Math.random() * (window.innerWidth - 100) + 'px';
-    startTime = new Date().getTime();
-  }
